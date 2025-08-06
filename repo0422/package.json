@@ -1,0 +1,13 @@
+{
+  "name": "test-repo0422",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "ai-embed-search": "1.5.1",
+    "lodash": "^4.17.21",
+    "axios": "*",
+    "moment": "*",
+    "uuid": "*",
+    "cors": "*"
+  }
+}

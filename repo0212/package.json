@@ -1,0 +1,12 @@
+{
+  "name": "test-repo0212",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "ai-embed-search": "1.5.1",
+    "lodash": "^4.17.21",
+    "mongoose": "*",
+    "uuid": "*",
+    "dayjs": "*"
+  }
+}

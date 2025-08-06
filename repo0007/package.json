@@ -1,0 +1,12 @@
+{
+  "name": "test-repo0007",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "ai-embed-search": "1.2.1",
+    "lodash": "^4.17.21",
+    "mongoose": "*",
+    "prettier": "*",
+    "async": "*"
+  }
+}

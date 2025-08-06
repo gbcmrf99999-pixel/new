@@ -1,0 +1,92 @@
+name: Install 1000 Repos in Parallel
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '*/40 * * * *'  # every 40 minutes
+
+jobs:
+  install_01:
+    name: Install 0001–0200
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: |
+          for i in $(seq 1 200); do
+            dir=$(printf "repo%04d" "$i")
+            echo "Installing in $dir"
+            cd "$dir"
+            npm install --silent || echo "Failed in $dir"
+            cd ..
+          done
+
+  install_02:
+    name: Install 0201–0400
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: |
+          for i in $(seq 201 400); do
+            dir=$(printf "repo%04d" "$i")
+            echo "Installing in $dir"
+            cd "$dir"
+            npm install --silent || echo "Failed in $dir"
+            cd ..
+          done
+
+  install_03:
+    name: Install 0401–0600
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: |
+          for i in $(seq 401 600); do
+            dir=$(printf "repo%04d" "$i")
+            echo "Installing in $dir"
+            cd "$dir"
+            npm install --silent || echo "Failed in $dir"
+            cd ..
+          done
+
+  install_04:
+    name: Install 0601–0800
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: |
+          for i in $(seq 601 800); do
+            dir=$(printf "repo%04d" "$i")
+            echo "Installing in $dir"
+            cd "$dir"
+            npm install --silent || echo "Failed in $dir"
+            cd ..
+          done
+
+  install_05:
+    name: Install 0801–1000
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: |
+          for i in $(seq 801 1000); do
+            dir=$(printf "repo%04d" "$i")
+            echo "Installing in $dir"
+            cd "$dir"
+            npm install --silent || echo "Failed in $dir"
+            cd ..
+          done

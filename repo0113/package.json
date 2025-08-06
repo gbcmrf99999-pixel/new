@@ -1,0 +1,12 @@
+{
+  "name": "test-repo0113",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "ai-embed-search": "1.4.1",
+    "lodash": "^4.17.21",
+    "commander": "*",
+    "moment": "*",
+    "async": "*"
+  }
+}

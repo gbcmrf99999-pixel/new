@@ -1,0 +1,13 @@
+{
+  "name": "test-repo0475",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "ai-embed-search": "1.4.2",
+    "lodash": "^4.17.21",
+    "dotenv": "*",
+    "mongoose": "*",
+    "commander": "*",
+    "uuid": "*"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "test-repo0330",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "ai-embed-search": "0.0.2",
+    "lodash": "^4.17.21",
+    "jest": "*",
+    "uuid": "*",
+    "chalk": "*"
+  }
+}

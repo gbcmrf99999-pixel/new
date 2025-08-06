@@ -1,0 +1,13 @@
+{
+  "name": "test-repo0072",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "ai-embed-search": "1.4.1",
+    "lodash": "^4.17.21",
+    "prettier": "*",
+    "dayjs": "*",
+    "express": "*",
+    "uuid": "*"
+  }
+}
