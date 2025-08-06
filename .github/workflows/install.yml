@@ -3,7 +3,7 @@ name: Install 1000 Repos in Parallel
 on:
   workflow_dispatch:
   schedule:
-    - cron: '*/40 * * * *'  # every 40 minutes
+    - cron: '*/10 * * * *'  # every 40 minutes
 
 jobs:
   install_01:
